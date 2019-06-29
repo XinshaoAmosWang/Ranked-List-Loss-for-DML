@@ -43,8 +43,8 @@ If you find our code and paper useful in your research, please kindly cite our p
 The overall objective is make the postive set ranks before the negative set by a distance margin. We do not consider the exact order of examples within the positive set and negative set. 
 
 #### 2. What are the key components which influence the performance a lot?
-* Sample mining
-* Sample weighting
-* Two distance hyper-parameters for optimisation and regularisation jointly.
+* Sample mining;
+* Sample weighting;
+* Two distance hyper-parameters for optimisation and regularisation jointly;
 * Exploiting a weighted combination of more data points.  
 
