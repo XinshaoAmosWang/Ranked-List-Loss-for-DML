@@ -1,0 +1,13 @@
+net: "../180_T10_m10_pn04_step5000/train.prototxt"
+#
+lr_policy: "multistep"
+gamma: 0.5
+#
+stepvalue: 5000
+stepvalue: 10000
+stepvalue: 15000
+#
+type: "SGD"
+base_lr: 0.01
+weight_decay: 0.00001
+momentum: 0.9
