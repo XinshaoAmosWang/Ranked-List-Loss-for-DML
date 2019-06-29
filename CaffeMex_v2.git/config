@@ -1,6 +1,0 @@
-[core]
-	repositoryformatversion = 0
-	filemode = false
-	bare = true
-[remote "origin"]
-	url = git@github.com:sciencefans/CaffeMex_v2.git
