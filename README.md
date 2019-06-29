@@ -36,7 +36,7 @@ If you find our code and paper useful in your research, please kindly cite our p
 
 
 ## More Qualitative results
-
+[[Slides]](https://drive.google.com/file/d/1nSXCe-7t_EkNwjFuXTnmzzoFr-6jFKVW/view?usp=sharing) [[Poster]](https://drive.google.com/file/d/1vSp3mDRJKdQFNUH12ehuDDyqQfjXFnWM/view?usp=sharing)
 ## Common questions
 
 #### 1. What ranking means here? 
