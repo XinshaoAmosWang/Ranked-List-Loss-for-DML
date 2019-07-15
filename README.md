@@ -7,7 +7,7 @@
 ## Dependencies
 The core functions are implemented in the [caffe](https://github.com/BVLC/caffe) framework. We use matlab interfaces matcaffe for data preparation.  
 * [CaffeMex_v2](https://github.com/sciencefans/CaffeMex_v2/tree/9bab8d2aaa2dbc448fd7123c98d225c680b066e4)
-* MATLAB 2017b
+* [MATLAB 2017b](https://uk.mathworks.com/products/new_products/release2017b.html)
 
 
 ## Setup
@@ -126,3 +126,6 @@ Our work benefits from:
 
 ## Licence
 BSD 3-Clause "New" or "Revised" License
+
+## Contact
+Xinshao Wang (You can call me Amos as well): xwang39 at qub.ac.uk
