@@ -7,11 +7,13 @@ addpath('../pre_pro_process/utils');
 addpath ../../CaffeMex_v2/matlab/
 mainDir = '../';
 
-modelDir = '180_T10_m12_pn04_step5000';
+modelDir = 'deploy_prototxts';
 param.gpu_id = x;
 param.test_batch_size = 64;
 param.test_net_file = fullfile(mainDir, modelDir, 'test_H.prototxt');
-
+blob_name = 'pool5/7x7_s1';
+record_file = 'Recall_H.txt';
+        
 
 param.save_model_file = 'SOP';
 param.save_model_name = 'SOP_iter';
@@ -26,14 +28,12 @@ for iter = 10000 : 2000 : 20000
         cur_path = pwd;
         caffe.reset_all;
         caffe.set_mode_gpu();
-        caffe.set_device(param.gpu_id);
         caffe.init_log(fullfile(cur_path, 'log'));
 
         model_path = strcat(param.save_model_file, num2str(trial_index),...
                                                 '/', param.save_model_name, '_', num2str(iter), '.caffemodel');
         net = caffe.get_net(param.test_net_file, model_path, 'test');
 
-        record_file = 'Recall.txt';
         test_ori_center_crop_v02;
 end
 

@@ -13,11 +13,6 @@ input_dim: 1
 input_dim: 1
 input_dim: 1
 
-input: "image_attention"
-input_dim: 180
-input_dim: 1
-input_dim: 1
-input_dim: 1
 
 
 
@@ -3180,8 +3175,7 @@ layer{
 layer {
   bottom: "features/L2Norm"
   bottom: "label"
-  bottom: "image_attention"
-
+  
   top: "WSiamese/loss_image"
   name: "WSiamese/loss_image"
   
@@ -3363,8 +3357,7 @@ layer{
 layer {
   bottom: "loss1/fc/bn/sc/fc/L2Norm"
   bottom: "label"
-  bottom: "image_attention"
-
+  
   top: "WSiamese/loss_image1"
   name: "WSiamese/loss_image1"
   
@@ -3550,8 +3543,7 @@ layer{
 layer {
   bottom: "loss2/fc/bn/sc/fc/L2Norm"
   bottom: "label"
-  bottom: "image_attention"
-
+  
   top: "WSiamese/loss_image2"
   name: "WSiamese/loss_image2"
   

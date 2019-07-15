@@ -33,13 +33,11 @@ void DistanceWeightedValidPairLossV12Layer<Dtype>::Reshape(
   pair_num = 0;
   pair_index_a.clear();
   pair_index_b.clear();
-  pair_score.clear();
   for (int i = 0; i < sample_num - 1; i++){
     for(int j = i + 1; j < sample_num; j++){
       pair_num++;
       pair_index_a.push_back(i);
       pair_index_b.push_back(j);
-      pair_score.push_back(Dtype(1.0));
     }
   }
   //
@@ -88,9 +86,6 @@ void DistanceWeightedValidPairLossV12Layer<Dtype>::Forward_cpu(
 
     caffe_copy(feature_dim, source_a, dest_a);
     caffe_copy(feature_dim, source_b, dest_b);
-    //the pair score
-    //pair_score[i] = bottom[2]->cpu_data()[pair_index_a[i]] * bottom[2]->cpu_data()[pair_index_b[i]];
-    pair_score[i] = std::min(bottom[2]->cpu_data()[pair_index_a[i]] , bottom[2]->cpu_data()[pair_index_b[i]]);
   }
   // The forward pass of contrastive loss.
   contrastive_loss_layer_->Forward(contrastive_loss_bottom, contrastive_loss_top);
@@ -126,9 +121,7 @@ void DistanceWeightedValidPairLossV12Layer<Dtype>::Backward_cpu(const vector<Blo
     vector<Dtype> sum_sample_weights_dissim(sample_num, static_cast<Dtype>(1e-8));
     Dtype sum_pair_weight = static_cast<Dtype>(1e-8);
 
-    vector<bool> valid_list(sample_num, false);
-    int valid_count = 0;
-
+    
     for(int i = 0; i < pair_num; i++){
       Dtype dist = sqrt(auxiLayer->dist_sq_.cpu_data()[i]);
       if( static_cast<int>(pair_label.cpu_data()[i]) ){
@@ -139,14 +132,10 @@ void DistanceWeightedValidPairLossV12Layer<Dtype>::Backward_cpu(const vector<Blo
         //weight computation
         if( m_dist > Dtype(0.0) ){
           pair_weights[i] = power_x_scale_base(m_dist, scale, base);
-          //if there is any valid sample, the list is valid
-          //valid_list[pair_index_a[i]] = true;
-          //valid_list[pair_index_b[i]] = true;
         }
         else{
           pair_weights[i] = Dtype(0.0);
         }
-        //pair_weights[i] = pair_weights[i] * pair_score[i];
         
 
         sum_sample_weights_sim[pair_index_a[i]] += pair_weights[i];
@@ -156,15 +145,11 @@ void DistanceWeightedValidPairLossV12Layer<Dtype>::Backward_cpu(const vector<Blo
         //dissimilar pairs
         Dtype m_dist = margin - dist;
         if( m_dist > Dtype(0.0) ){
-          pair_weights[i] = power_x_scale_base(m_dist, scale_n, base_n) ;
-          //if there is any valid pair, the list is valid
-          //valid_list[pair_index_a[i]] = true;
-          //valid_list[pair_index_b[i]] = true;
+          pair_weights[i] = power_x_scale_base(m_dist, scale_n, base_n);
         }
         else{
           pair_weights[i] = Dtype(0.0);
         }
-        //pair_weights[i] = pair_weights[i] * pair_score[i] ;
         
 
         sum_sample_weights_dissim[pair_index_a[i]] += pair_weights[i];
@@ -172,13 +157,6 @@ void DistanceWeightedValidPairLossV12Layer<Dtype>::Backward_cpu(const vector<Blo
       }
       //sum_pair_weight += pair_weights[i];
     }
-    
-    /*for(int i = 0; i < sample_num; i++){
-      if(valid_list[i]){
-        valid_count += 1;
-      }
-    }*/
-    //LOG(INFO) << "valid_count: " << valid_count;
     for(int i = 0; i < sample_num; i++){
       sum_pair_weight += sum_sample_weights_sim[i];
       sum_pair_weight += sum_sample_weights_dissim[i];
@@ -201,9 +179,7 @@ void DistanceWeightedValidPairLossV12Layer<Dtype>::Backward_cpu(const vector<Blo
       }
       weight_a *= (sum_sample_weights_sim[pair_index_a[i]] + sum_sample_weights_dissim[pair_index_a[i]]) / sum_pair_weight;
       weight_b *= (sum_sample_weights_sim[pair_index_b[i]] + sum_sample_weights_dissim[pair_index_b[i]]) / sum_pair_weight;
-      //weight_a = weight_a / valid_count;
-      //weight_b = weight_b / valid_count;
-
+      
       const Dtype* source_a = pair_data_a.cpu_diff() + i * feature_dim;
       const Dtype* source_b = pair_data_b.cpu_diff() + i * feature_dim;
       Dtype* dest_a = bottom[0]->mutable_cpu_diff() + pair_index_a[i] * feature_dim;

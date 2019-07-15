@@ -82,7 +82,6 @@ trial_index = 1;
     batch_label = zeros(1,1,1,batch_size, 'single');
     %
     assert( batch_size == id_num * image_per_id );
-    image_attention = ones(1,1,1, batch_size, 'single') / batch_size;  %% something wrong there, but okay since we do not use attention
     %
     train_x_axis=[];
     train_y_axis=[];
@@ -118,8 +117,7 @@ trial_index = 1;
         for g = 1 : gpu_num
             caffe_solver.nets{g}.blobs('data').set_data( batch_data(:,:,:, (g-1)*perGPU+1 : g*perGPU) );
             caffe_solver.nets{g}.blobs('label').set_data( batch_label(:,:,:, (g-1)*perGPU+1 : g*perGPU) );
-            % attention input
-            caffe_solver.nets{g}.blobs('image_attention').set_data(image_attention(:,:,:, (g-1)*perGPU+1 : g*perGPU));
+            
         end
 
 
@@ -152,7 +150,7 @@ trial_index = 1;
             caffe_solver.nets{1}.save(strcat(model_name, '.caffemodel'));
 
             % save solverstate
-            caffe_solver.savestate( strcat(model_name, '_snapshot_') );
+            %caffe_solver.savestate( strcat(model_name, '_snapshot_') );
 
             mat_path = strcat('error', num2str(iter), '.mat');
             save(mat_path, 'train_x_axis', 'train_y_axis');

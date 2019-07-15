@@ -17,13 +17,12 @@ namespace caffe {
  * Author: Xinshao Wang
  * Email: xinshaowang@gmail.com
  * Time: 04/2019
- * @param bottom input Blob vector (length 3)
+ * @param bottom input Blob vector (length 2)
  *   -# @f$ (N \times C \times 1 \times 1) @f$
  *      the features
  *   -# @f$ (N \times 1 \times 1 \times 1) @f$
  *      the labels
- *   -# @f$ (N \times 1 \times 1 \times 1) @f$
- *      the scores
+ *   
  * @param top output Blob vector (length 1)
  *   -# @f$ (1 \times 1 \times 1 \times 1) @f$
  *      the loss
@@ -44,7 +43,7 @@ class DistanceWeightedValidPairLossV12Layer : public LossLayer<Dtype> {
       const vector<Blob<Dtype>*>& top);
 
   virtual inline const char* type() const { return "DistanceWeightedValidPairLossV12"; }
-  virtual inline int ExactNumBottomBlobs() const { return 3; }
+  virtual inline int ExactNumBottomBlobs() const { return 2; }
   virtual inline int ExactNumTopBlobs() const { return 1; }
 
   /**
@@ -85,7 +84,6 @@ class DistanceWeightedValidPairLossV12Layer : public LossLayer<Dtype> {
   //auxiliary index for link: the length of a and b is the same;
   vector<int> pair_index_a;
   vector<int> pair_index_b;
-  vector<Dtype> pair_score;
   //auxiliary parameters for the auxiliary layer
   Blob<Dtype> pair_data_a;
   Blob<Dtype> pair_data_b;
