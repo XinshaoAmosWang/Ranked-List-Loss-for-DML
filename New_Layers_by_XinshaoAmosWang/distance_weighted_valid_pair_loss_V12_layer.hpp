@@ -16,7 +16,7 @@ namespace caffe {
  * @brief  *
  * Author: Xinshao Wang
  * Email: xinshaowang@gmail.com
- * Time: 04/2018
+ * Time: 04/2019
  * @param bottom input Blob vector (length 3)
  *   -# @f$ (N \times C \times 1 \times 1) @f$
  *      the features
@@ -64,7 +64,7 @@ class DistanceWeightedValidPairLossV12Layer : public LossLayer<Dtype> {
     
     return (Dtype(1) / divider) * exp(expVal);
   }
-  inline Dtype softmaxT(const Dtype x, const Dtype T, const Dtype base) 
+  inline Dtype power_x_scale_base(const Dtype x, const Dtype T, const Dtype base) 
   {
     return pow( base, T * x );
   }

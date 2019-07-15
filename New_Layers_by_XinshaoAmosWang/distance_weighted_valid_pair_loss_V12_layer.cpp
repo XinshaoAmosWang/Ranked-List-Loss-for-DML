@@ -114,10 +114,10 @@ void DistanceWeightedValidPairLossV12Layer<Dtype>::Backward_cpu(const vector<Blo
     //reweighting
     Dtype margin = this->layer_param_.contrastive_loss_param_v2().margin();
     Dtype pn_margin = this->layer_param_.contrastive_loss_param_v2().pn_margin();
-    //The positive parameters of softmaxT: temporature parameter (T=scale)
+    //The positive parameters of power_x_scale_base: temporature parameter (T=scale)
     Dtype scale = this->layer_param_.softmax_t_p_param().scale();
     Dtype base = this->layer_param_.softmax_t_p_param().base();
-    //The negative parameters of softmaxT:
+    //The negative parameters of power_x_scale_base:
     Dtype scale_n = this->layer_param_.softmax_t_n_param().scale();
     Dtype base_n = this->layer_param_.softmax_t_n_param().base();
     
@@ -138,7 +138,7 @@ void DistanceWeightedValidPairLossV12Layer<Dtype>::Backward_cpu(const vector<Blo
 
         //weight computation
         if( m_dist > Dtype(0.0) ){
-          pair_weights[i] = softmaxT(m_dist, scale, base);
+          pair_weights[i] = power_x_scale_base(m_dist, scale, base);
           //if there is any valid sample, the list is valid
           //valid_list[pair_index_a[i]] = true;
           //valid_list[pair_index_b[i]] = true;
@@ -156,7 +156,7 @@ void DistanceWeightedValidPairLossV12Layer<Dtype>::Backward_cpu(const vector<Blo
         //dissimilar pairs
         Dtype m_dist = margin - dist;
         if( m_dist > Dtype(0.0) ){
-          pair_weights[i] = softmaxT(m_dist, scale_n, base_n) ;
+          pair_weights[i] = power_x_scale_base(m_dist, scale_n, base_n) ;
           //if there is any valid pair, the list is valid
           //valid_list[pair_index_a[i]] = true;
           //valid_list[pair_index_b[i]] = true;

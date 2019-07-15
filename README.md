@@ -90,8 +90,6 @@ If you find our code and paper useful in your research, please kindly cite our p
     }
 
 
-## More Qualitative results
-[[Slides]](https://drive.google.com/file/d/1nSXCe-7t_EkNwjFuXTnmzzoFr-6jFKVW/view?usp=sharing) [[Poster]](https://drive.google.com/file/d/1vSp3mDRJKdQFNUH12ehuDDyqQfjXFnWM/view?usp=sharing)
 ## Common questions
 
 #### 1. What does ranking mean? 
@@ -107,7 +105,12 @@ The overall objective is make the postive set ranks before the negative set by a
     
 <img src="img1.png" width="400">
 
+## More Qualitative results
+[[Slides]](https://drive.google.com/file/d/1nSXCe-7t_EkNwjFuXTnmzzoFr-6jFKVW/view?usp=sharing) [[Poster]](https://drive.google.com/file/d/1vSp3mDRJKdQFNUH12ehuDDyqQfjXFnWM/view?usp=sharing)
 
+## Our trained model on SOP
+
+You can use the test scripts to test the performance of our trained model. 
 
 ## Acknowledgements
 
@@ -119,3 +122,5 @@ Our work benefits from:
 
 * Caffe library: https://caffe.berkeleyvision.org/
 
+## Licence
+MIT Licence

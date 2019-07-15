@@ -32,28 +32,11 @@ void ContrastiveLossV2Layer<Dtype>::LayerSetUp(
   for (int i = 0; i < bottom[0]->channels(); ++i)
     summer_vec_.mutable_cpu_data()[i] = Dtype(1);
 
-
-  threshold = Dtype(0.05);
 }
 
 template <typename Dtype>
 void ContrastiveLossV2Layer<Dtype>::Forward_cpu(
     const vector<Blob<Dtype>*>& bottom, const vector<Blob<Dtype>*>& top) {
-
-  //changed by Xinshao Wang: xinshaowang@gmail.com
-  if( bottom.size() > 3 && ((bottom[3]->cpu_data()[0] - threshold < Dtype(1e-12)) || (bottom[4]->cpu_data()[0] - threshold < Dtype(1e-12)) ) )
-  {
-    top[0]->mutable_cpu_data()[0] = Dtype(0);
-
-    LOG(INFO) << bottom[3]->cpu_data()[0] << " " << bottom[4]->cpu_data()[0];
-    LOG(INFO) << "abnormal tracklet " ;
-    
-    //prepare for backward pass, actually do not need to change the Backward_cpu function
-    caffe_set(diff_.count(), Dtype(0), diff_.mutable_cpu_data());
-
-    return;
-  }
-  //LOG(INFO) << "good tracklet " ;
 
   int count = bottom[0]->count();
   caffe_sub(
@@ -99,22 +82,6 @@ template <typename Dtype>
 void ContrastiveLossV2Layer<Dtype>::Backward_cpu(const vector<Blob<Dtype>*>& top,
     const vector<bool>& propagate_down, const vector<Blob<Dtype>*>& bottom) {
 
-  //changed by Xinshao Wang: xinshaowang@gmail.com
-  if( bottom.size() > 3 && ((bottom[3]->cpu_data()[0] - threshold < Dtype(1e-12)) || (bottom[4]->cpu_data()[0] - threshold < Dtype(1e-12)) ) )
-  {
-    LOG(INFO) << bottom[3]->cpu_data()[0] << " " << bottom[4]->cpu_data()[0];
-    LOG(INFO) << "abnormal tracklet " ;
-
-    for (int i = 0; i < 2; ++i) {
-      if (propagate_down[i]) {
-        caffe_set(bottom[i]->count(), Dtype(0), bottom[i]->mutable_cpu_diff());
-      }
-    }
-      
-    return; //important
-  }
-  //LOG(INFO) << "good tracklet " ;
-  
   Dtype margin = this->layer_param_.contrastive_loss_param_v2().margin();
   bool legacy_version =
       this->layer_param_.contrastive_loss_param_v2().legacy_version();

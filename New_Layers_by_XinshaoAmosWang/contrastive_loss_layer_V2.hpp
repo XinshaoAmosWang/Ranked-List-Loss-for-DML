@@ -101,8 +101,6 @@ Blob<Dtype> dist_sq_;  // cached for backward pass
   Blob<Dtype> diff_sq_;  // tmp storage for gpu forward pass
   Blob<Dtype> summer_vec_;  // tmp storage for gpu forward pass
 
-  Dtype threshold; 
-  
 };
 
 }  // namespace caffe
