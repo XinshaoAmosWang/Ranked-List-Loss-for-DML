@@ -127,5 +127,10 @@ Our work benefits from:
 ## Licence
 BSD 3-Clause "New" or "Revised" License
 
+Affiliations: 
+
+* Queen's University Belfast, UK
+* Anyvision Research Team, UK
+
 ## Contact
 Xinshao Wang (You can call me Amos as well): xwang39 at qub.ac.uk
