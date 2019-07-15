@@ -110,7 +110,7 @@ The overall objective is make the postive set ranks before the negative set by a
 
 #### 3. How is a loss function related with deep metric learning?
 Generally, metric learning aims to learn a metric to measure the distance between two samples. 
-For example, NCA $[$b$]$ learns a linear transformation  from an input space $\mathbf{X}$ to a metric space $\mathbf{A}\mathbf{X}$. 
+For example, NCA `$[$b$]$` learns a linear transformation  from an input space $\mathbf{X}$ to a metric space $\mathbf{A}\mathbf{X}$. 
 %i.e., $f(\mathbf{x})=\mathbf{A}\mathbf{x}$. 
 In NCA, $d(\mathbf{x}_i, \mathbf{x}_j) = (\mathbf{A}\mathbf{x}_i-\mathbf{A}\mathbf{x}_j)^\top (\mathbf{A}\mathbf{x}_i-\mathbf{A}\mathbf{x}_j) =(\mathbf{x}_i-\mathbf{x}_j)^\top \mathbf{A}^\top \mathbf{A} (\mathbf{x}_i-\mathbf{x}_j)$. 
 Here $\mathbf{A}^\top \mathbf{A}$ is a learned metric while $d(\mathbf{x}_i, \mathbf{x}_j)$ is the distance between $\mathbf{x}_i$ and $\mathbf{x}_j$ in the metric space.
