@@ -40,7 +40,7 @@ The core functions are implemented in the [caffe](https://github.com/BVLC/caffe)
     sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
     sudo apt-get install --no-install-recommends libboost-all-dev
     sudo apt-get install libopenblas-dev
-    sudo apt-get install the python-dev
+    sudo apt-get install python-dev
     sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
     ```
 * Install [MATLAB 2017b](https://uk.mathworks.com/products/new_products/release2017b.html)
