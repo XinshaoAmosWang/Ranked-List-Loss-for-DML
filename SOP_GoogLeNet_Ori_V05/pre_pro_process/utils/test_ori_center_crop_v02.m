@@ -5,8 +5,9 @@
 % data_cell
 % class_ids
 
+blob_name = 'pool5/7x7_s1';
 test_features = forward_ori_center_crop_v02(net, TestImagePathBoxCell, ...
-					param.test_batch_size, param.crop_padding, param.force_square_size );
+					param.test_batch_size, param.crop_padding, param.force_square_size,  blob_name);
 test_num = size(test_features, 1);
 
 %% cosine score matrix

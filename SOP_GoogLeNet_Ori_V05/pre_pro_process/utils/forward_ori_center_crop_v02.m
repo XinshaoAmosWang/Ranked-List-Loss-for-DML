@@ -1,5 +1,5 @@
 function [images_feature] = forward_ori_center_crop_v02(net, TestImagePathBoxCell, ...
-                                            batch_size, crop_padding, force_square_size)
+                                            batch_size, crop_padding, force_square_size, blob_name)
 %forward_images_data 
 %Summary of this function goes here
 %   1. Input
@@ -31,7 +31,7 @@ for bt = 1 : num_batch
     net.blobs('data').set_data(batch_data);
     net.forward_prefilled;
     % extract features
-    images_feature = [images_feature; (squeeze(net.blobs('pool5/7x7_s1').get_data))'];
+    images_feature = [images_feature; (squeeze(net.blobs(blob_name).get_data))'];
 end
 
 % remained images
@@ -52,7 +52,7 @@ if  mod(num_img, batch_size) ~= 0
     net.blobs('data').set_data(batch_data);
     net.forward_prefilled;
     % extract features
-    images_feature = [images_feature; (squeeze(net.blobs('pool5/7x7_s1').get_data))'];
+    images_feature = [images_feature; (squeeze(net.blobs(blob_name).get_data))'];
 end
 
 

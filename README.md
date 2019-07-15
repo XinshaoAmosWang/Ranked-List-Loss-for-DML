@@ -125,4 +125,4 @@ Our work benefits from:
 * Caffe library: https://caffe.berkeleyvision.org/
 
 ## Licence
-MIT Licence
+BSD 3-Clause "New" or "Revised" License
