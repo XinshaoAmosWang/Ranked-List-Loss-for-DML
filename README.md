@@ -1,8 +1,3 @@
-<script src="//yihui.name/js/math-code.js"></script>
-<!-- Just one possible MathJax CDN below. You may use others. -->
-<script async
-  src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
 
 # Ranked-List-Loss-for-Deep-Metric-Learning
 
@@ -109,14 +104,10 @@ The overall objective is make the postive set ranks before the negative set by a
 * Exploiting a weighted combination of more data points.  
 
 #### 3. How is a loss function related with deep metric learning?
-Generally, metric learning aims to learn a metric to measure the distance between two samples. 
-For example, NCA `$[$b$]$` learns a linear transformation  from an input space $\mathbf{X}$ to a metric space $\mathbf{A}\mathbf{X}$. 
-%i.e., $f(\mathbf{x})=\mathbf{A}\mathbf{x}$. 
-In NCA, $d(\mathbf{x}_i, \mathbf{x}_j) = (\mathbf{A}\mathbf{x}_i-\mathbf{A}\mathbf{x}_j)^\top (\mathbf{A}\mathbf{x}_i-\mathbf{A}\mathbf{x}_j) =(\mathbf{x}_i-\mathbf{x}_j)^\top \mathbf{A}^\top \mathbf{A} (\mathbf{x}_i-\mathbf{x}_j)$. 
-Here $\mathbf{A}^\top \mathbf{A}$ is a learned metric while $d(\mathbf{x}_i, \mathbf{x}_j)$ is the distance between $\mathbf{x}_i$ and $\mathbf{x}_j$ in the metric space.
-However, \textbf{\textit{from the perspective of feature learning}}, metric learning learns an embedding function $f$, e.g., $f(\mathbf{x})=\mathbf{A}\mathbf{x}$. In the embedding (metric) space, the similarity between every pair is measured by their dot
-product. A loss function, e.g., NCA, is needed to supervise the learning of an embedding function $f$. This is why a loss function is connected with metric learning (embedding learning).
-As for deep metric learning, a deep CNN serves as a non-linear embedding function, as demonstrated in \textit{N}-pair-mc [28].
+    
+<img src="img1.png" width="400">
+
+
 
 ## Acknowledgements
 
