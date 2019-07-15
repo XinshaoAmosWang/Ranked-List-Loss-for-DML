@@ -43,7 +43,7 @@ The core functions are implemented in the [caffe](https://github.com/BVLC/caffe)
     sudo apt-get install the python-dev
     sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
     ```
-* Install MATLAB 2017b
+* Install [MATLAB 2017b](https://uk.mathworks.com/products/new_products/release2017b.html)
 
     Download and Run the install binary file
     ```bash
