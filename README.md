@@ -82,13 +82,16 @@ Examples for reproducing our results on [Stanford Online Product dataset](http:/
 ## Citation
 If you find our code and paper useful in your research, please kindly cite our paper:
 
-	@inproceedings{wang2019ranked,
-        title={Ranked List Loss for Deep Metric Learning},
-        author={Wang, Xinshao and Hua, Yang and Kodirov, Elyor and Hu, Guosheng and Garnier, Romain and Robertson, Neil M},
-        journal=cvpr,
-        year={2019}
-    }
-
+```bash
+InProceedings{Wang_2019_CVPR,
+author = {Wang, Xinshao and Hua, Yang and Kodirov, Elyor and Hu, Guosheng and Garnier, Romain and Robertson, Neil M.},
+title = {Ranked List Loss for Deep Metric Learning},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2019}
+}
+}
+```
 
 ## Common questions
 
