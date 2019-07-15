@@ -189,9 +189,9 @@ void DistanceWeightedValidPairLossV12Layer<Dtype>::Backward_cpu(const vector<Blo
       caffe_axpy(feature_dim, weight_b, source_b, dest_b);
     }
   }
-  if (propagate_down[1] || propagate_down[2]) {
+  if (propagate_down[1] ) {
     LOG(FATAL) << this->type()
-               << " Layer cannot backpropagate to label and score inputs.";
+               << " Layer cannot backpropagate to label.";
   }
 
 }

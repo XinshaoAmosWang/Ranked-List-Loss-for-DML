@@ -3194,7 +3194,6 @@ layer {
 
   propagate_down: 1
   propagate_down: 0
-  propagate_down: 0
 }
 
 
@@ -3375,7 +3374,6 @@ layer {
   }
 
   propagate_down: 1
-  propagate_down: 0
   propagate_down: 0
 }
 
@@ -3561,6 +3559,5 @@ layer {
   }
 
   propagate_down: 1
-  propagate_down: 0
   propagate_down: 0
 }
