@@ -95,7 +95,7 @@ year = {2019}
 ## Common questions
 
 #### 1. What does ranking mean? 
-The overall objective is make the postive set ranks before the negative set by a distance margin. We do not consider the exact order of examples within the positive set and negative set. 
+The overall objective is to make the postive set rank before the negative set by a distance margin. We do not need to consider the exact order of examples within the positive set and negative set. 
 
 #### 2. What are the key components which influence the performance a lot?
 * Sample mining;
