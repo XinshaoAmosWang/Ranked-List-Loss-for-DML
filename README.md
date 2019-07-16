@@ -85,6 +85,14 @@ Examples for reproducing our results on [Stanford Online Product dataset](http:/
     Run the training and testing scripts in the training folder of a specific setting defined by its corresponding prototxt folder. 
 
 
+## Our trained model on SOP
+
+You can use the test scripts to test the performance of our trained model in the directory Our_trained_models_on_SOP_T10_m12_pn04_iter_16000. 
+
+## More Qualitative results
+[[Slides]](https://drive.google.com/file/d/1nSXCe-7t_EkNwjFuXTnmzzoFr-6jFKVW/view?usp=sharing) [[Poster]](https://drive.google.com/file/d/1vSp3mDRJKdQFNUH12ehuDDyqQfjXFnWM/view?usp=sharing)
+
+
 ## Citation
 If you find our code and paper useful in your research, please kindly cite our paper:
 
@@ -113,12 +121,7 @@ The overall objective is to make the postive set rank before the negative set by
     
 <img src="img1.png" width="400">
 
-## More Qualitative results
-[[Slides]](https://drive.google.com/file/d/1nSXCe-7t_EkNwjFuXTnmzzoFr-6jFKVW/view?usp=sharing) [[Poster]](https://drive.google.com/file/d/1vSp3mDRJKdQFNUH12ehuDDyqQfjXFnWM/view?usp=sharing)
 
-## Our trained model on SOP
-
-You can use the test scripts to test the performance of our trained model in the directory Our_trained_models_on_SOP_T10_m12_pn04_iter_16000. 
 
 ## Acknowledgements
 
