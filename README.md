@@ -118,7 +118,7 @@ The overall objective is to make the postive set rank before the negative set by
 
 ## Our trained model on SOP
 
-You can use the test scripts to test the performance of our trained model. 
+You can use the test scripts to test the performance of our trained model in the directory Our_trained_models_on_SOP_T10_m12_pn04_iter_16000. 
 
 ## Acknowledgements
 
