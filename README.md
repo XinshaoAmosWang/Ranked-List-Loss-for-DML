@@ -139,4 +139,4 @@ Affiliations:
 * Anyvision Research Team, UK
 
 ## Contact
-Xinshao Wang (You can call me Amos as well): xwang39 at qub.ac.uk
+Xinshao Wang (You can call me Amos as well) xwang39 at qub.ac.uk
