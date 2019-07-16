@@ -19,9 +19,9 @@ https://stackoverflow.com/questions/29297154/github-invalid-username-or-password
 git config user.name "XinshaoAmosWang"
 git config user.email "xinshaowang@gmail.com"
 
-git clone git@github.com:XinshaoAmosWang/Deep-Metric-Embedding.git
+git clone git@github.com:XinshaoAmosWang/Ranked-List-Loss-for-Deep-Metric-Learning.git
 
-git remote set-url origin git@github.com:XinshaoAmosWang/Deep-Metric-Embedding.git
+git remote set-url origin git@github.com:XinshaoAmosWang/Ranked-List-Loss-for-Deep-Metric-Learning.git
 
 git push origin your-branch
 
@@ -38,9 +38,9 @@ git config user.name "XinshaoAmosWang"
 
 git config user.email "xinshaowang@gmail.com"
 
-git clone git@github.com:XinshaoAmosWang/Deep-Metric-Embedding.git
+git clone git@github.com:XinshaoAmosWang/Ranked-List-Loss-for-Deep-Metric-Learning.git
 
-git remote set-url origin git@github.com:XinshaoAmosWang/Deep-Metric-Embedding.git
+git remote set-url origin git@github.com:XinshaoAmosWang/Ranked-List-Loss-for-Deep-Metric-Learning.git
 
 
 ## Basic commands

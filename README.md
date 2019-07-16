@@ -63,7 +63,7 @@ The core functions are implemented in the [caffe](https://github.com/BVLC/caffe)
 
 Examples for reproducing our results on [Stanford Online Product dataset](http://cvgl.stanford.edu/projects/lifted_struct/) are given. 
 
-* Data preparation
+* Data preparation for SOP
     
     Downlaod Stanford_Online_Products dataset from ftp://cs.stanford.edu/cs/cvgl/Stanford_Online_Products.zip
 
@@ -73,6 +73,12 @@ Examples for reproducing our results on [Stanford Online Product dataset](http:/
         a. Changing the path within the mat files. 
         b. A Simpler way: Create a soft link of your data
         e.g sudo ln -s /.../Stanford_Online_Products /home/xinshao/Papers_Projects/Data/Stanford_Online_Products
+
+* Custom data preparation
+
+    You only need to create training/testing mat files with the same structure as  SOP_TrainImagePathBoxCell.mat and SOP_TestImagePathBoxCell.mat in directory SOP_GoogLeNet_Ori_V05/pre_pro_process. 
+
+    e.g. SOP_TrainImagePathBoxCell.mat contains <img src="img2.png" width="400">, TrainImagePathBoxCell storing all image paths and class_ids storing their corresponding semantic labels. 
 
 * Train & Test
     
