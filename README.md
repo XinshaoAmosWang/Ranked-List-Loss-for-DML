@@ -3,6 +3,63 @@
 
 ### [[Paper]](https://arxiv.org/abs/1903.03238) [[Slides]](https://drive.google.com/file/d/1nSXCe-7t_EkNwjFuXTnmzzoFr-6jFKVW/view?usp=sharing) [[Poster]](https://drive.google.com/file/d/1vSp3mDRJKdQFNUH12ehuDDyqQfjXFnWM/view?usp=sharing)
 
+## Tree Structure
+```bash
+../Ranked-List-Loss-for-Deep-Metric-Learning/
+├── CaffeMex_v2
+├── common_git.md
+├── imgs
+│   ├── img1.png
+│   └── img2.png
+├── LICENSE
+├── New_Layers_by_XinshaoAmosWang
+│   ├── caffe.proto
+│   ├── contrastive_loss_layer_V2.cpp
+│   ├── contrastive_loss_layer_V2.hpp
+│   ├── distance_weighted_valid_pair_loss_V12_layer.cpp
+│   ├── distance_weighted_valid_pair_loss_V12_layer.hpp
+│   └── Makefile.config
+├── Our_trained_models_on_SOP_T10_m12_pn04_iter_16000
+│   └── SOP_iter_16000.caffemodel
+├── README.md
+├── SOP_GoogLeNet_Ori_V05
+│   ├── 180_T10_m10_pn04_step5000
+│   │   ├── solver.prototxt
+│   │   └── train.prototxt
+│   ├── 180_T10_m12_pn04_step5000
+│   │   ├── solver.prototxt
+│   │   └── train.prototxt
+│   ├── deploy_prototxts
+│   │   ├── test_concat.prototxt
+│   │   ├── test_H.prototxt
+│   │   ├── test_L.prototxt
+│   │   └── test_M.prototxt
+│   ├── pre_pro_process
+│   │   ├── SOP_TestImagePathBoxCell.mat
+│   │   ├── SOP_TrainImagePathBoxCell.mat
+│   │   └── utils
+│   │       ├── forward_ori_center_crop_v02.m
+│   │       ├── get_train_minibatch_ori_aug_v03.m
+│   │       ├── img_center_crop.m
+│   │       ├── img_random_crop.m
+│   │       ├── process_ori_image_aug_v02.m
+│   │       └── test_ori_center_crop_v02.m
+│   ├── pretrain_model
+│   │   └── googlenet_bn.caffemodel
+│   ├── train_180_T10_m10_pn04_step5000
+│   │   ├── test_H.m
+│   │   ├── test_L.m
+│   │   ├── test_M.m
+│   │   ├── test_v02.m
+│   │   └── train_v02.m
+│   └── train_180_T10_m12_pn04_step5000
+│       ├── test_H.m
+│       ├── test_L.m
+│       ├── test_M.m
+│       ├── test_v02.m
+│       └── train_v02.m
+
+```
 
 ## Dependencies
 The core functions are implemented in the [caffe](https://github.com/BVLC/caffe) framework. We use matlab interfaces matcaffe for data preparation.  
@@ -78,7 +135,7 @@ Examples for reproducing our results on [Stanford Online Product dataset](http:/
 
     You only need to create training/testing mat files with the same structure as  SOP_TrainImagePathBoxCell.mat and SOP_TestImagePathBoxCell.mat in directory SOP_GoogLeNet_Ori_V05/pre_pro_process. 
 
-    e.g. SOP_TrainImagePathBoxCell.mat contains <img src="img2.png" width="400">, TrainImagePathBoxCell storing all image paths and class_ids storing their corresponding semantic labels. 
+    e.g. SOP_TrainImagePathBoxCell.mat contains <img src="imgs/img2.png" width="400">, TrainImagePathBoxCell storing all image paths and class_ids storing their corresponding semantic labels. 
 
 * Train & Test
     
@@ -119,7 +176,7 @@ The overall objective is to make the postive set rank before the negative set by
 
 #### 3. How is a loss function related with deep metric learning?
     
-<img src="img1.png" width="400">
+<img src="imgs/img1.png" width="400">
 
 
 
