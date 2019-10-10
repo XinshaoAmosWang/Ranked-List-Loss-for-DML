@@ -6,7 +6,7 @@
 % class_ids
 
 test_features = forward_ori_center_crop_v02(net, TestImagePathBoxCell, ...
-					param.test_batch_size, param.crop_padding, param.force_square_size,  blob_name);
+					param.test_batch_size, param.crop_padding, param.force_square_size );
 test_num = size(test_features, 1);
 
 %% cosine score matrix
@@ -34,7 +34,7 @@ fprintf('iter: %d, rank1: %.3f, rank10: %.3f, rank100: %.3f\n', ...
                                 iter, arr(1), arr(2), arr(3));
 
 
-%xinshao_test_clustering(test_features, class_ids, fin);
+xinshao_test_clustering(test_features, class_ids, fin);
 
 fclose(fin);
 
