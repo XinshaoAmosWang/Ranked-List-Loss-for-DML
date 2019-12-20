@@ -3,9 +3,12 @@
 
 ### [[Paper]](https://arxiv.org/abs/1903.03238) [[Slides]](https://drive.google.com/file/d/1nSXCe-7t_EkNwjFuXTnmzzoFr-6jFKVW/view?usp=sharing) [[Poster]](https://drive.google.com/file/d/1vSp3mDRJKdQFNUH12ehuDDyqQfjXFnWM/view?usp=sharing)
 
-## Repository Tree Structure
+## To Visualise the Repository Tree Structure
 
-<img src="imgs/tree_directory.png" width="400">
+```
+cd ./Ranked-List-Loss-for-Deep-Metric-Learning
+tree
+```
 
 ## Dependencies
 The core functions are implemented in the [caffe](https://github.com/BVLC/caffe) framework. We use matlab interfaces matcaffe for data preparation.  
