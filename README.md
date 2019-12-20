@@ -92,6 +92,10 @@ Examples for reproducing our results on [Stanford Online Product dataset](http:/
 
 You can use the test scripts to test the performance of our trained model in the directory Our_trained_models_on_SOP_T10_m12_pn04_iter_16000. 
 
+## Example on how to train on CUB-200-2011 dataset
+
+Please see the folder: CUB_V01. 
+
 ## More Qualitative results
 [[Slides]](https://drive.google.com/file/d/1nSXCe-7t_EkNwjFuXTnmzzoFr-6jFKVW/view?usp=sharing) [[Poster]](https://drive.google.com/file/d/1vSp3mDRJKdQFNUH12ehuDDyqQfjXFnWM/view?usp=sharing)
 
