@@ -1,7 +1,7 @@
 
 # Ranked-List-Loss-for-Deep-Metric-Learning
 
-### [[Paper]](https://arxiv.org/abs/1903.03238) [[Slides]](https://drive.google.com/file/d/1nSXCe-7t_EkNwjFuXTnmzzoFr-6jFKVW/view?usp=sharing) [[Poster]](https://drive.google.com/file/d/1vSp3mDRJKdQFNUH12ehuDDyqQfjXFnWM/view?usp=sharing)
+### [[Paper]](https://arxiv.org/abs/1903.03238) [[Slides]](https://github.com/XinshaoAmosWang/Ranked-List-Loss-for-DML/blob/master/RLL_CVPR19_V01.pdf) [[Poster]](https://github.com/XinshaoAmosWang/Ranked-List-Loss-for-DML/blob/master/RLL_Poster_V03.pdf)
 
 ## To Visualise the Repository Tree Structure
 
