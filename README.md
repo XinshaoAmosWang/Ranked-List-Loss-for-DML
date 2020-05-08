@@ -7,7 +7,7 @@
 * The code will be updated shortly. Thanks for your interest. 
 * In [Unbiased Evaluation of Deep Metric Learning Algorithms--Istvan Feh ´ erv ´ ari etal 2019](https://arxiv.org/pdf/1911.12528.pdf), **it stated "On the SOP dataset, we never managed to make this algorithm converge." using [Ranked List Loss](https://arxiv.org/abs/1903.03238).**
     * First of all, I thank their interest in our work, which is a great motivation for me and my collaborators. 
-    * However, their statement is not the fact. Please check our reproducible results shortly.  
+    * However, their statement is not the fact. I appreciate their report on the difficulty of applying our method. Please check our reproducible results shortly.  
 * [Paper Summary on Distance Metric, Representation Learning-Updated Blog](https://xinshaoamoswang.github.io/blogs/2020-04-23-deep-metric-learning/)
 
 ## To Visualise the Repository Tree Structure
