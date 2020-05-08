@@ -3,6 +3,9 @@
 
 ### [[Paper]](https://arxiv.org/abs/1903.03238) [[Slides]](https://github.com/XinshaoAmosWang/Ranked-List-Loss-for-DML/blob/master/RLL_CVPR19_V01.pdf) [[Poster]](https://github.com/XinshaoAmosWang/Ranked-List-Loss-for-DML/blob/master/RLL_Poster_V03.pdf)
 
+## This work is being extended for TPAMI submission, with the main target to improve this work further. 
+The code will be updated shortly. Thanks for your interest. 
+
 ## To Visualise the Repository Tree Structure
 
 ```
