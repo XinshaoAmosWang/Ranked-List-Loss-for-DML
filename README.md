@@ -6,7 +6,7 @@
 This work is being extended for TPAMI submission, with the main target to improve this work further. 
 * **The updated codes are released. Feel free to have a try!** 
 * In [Unbiased Evaluation of Deep Metric Learning Algorithms--Istvan Feh ´ erv ´ ari etal 2019](https://arxiv.org/pdf/1911.12528.pdf), **it stated "On the SOP dataset, we never managed to make this algorithm converge." using [Ranked List Loss](https://arxiv.org/abs/1903.03238).**
-    * First of all, I thank their interest in our work, which is a great motivation for me and my collaborators. 
+    * First of all, I thank their interest in our work, which is inspiring for me and my collaborators. 
     * However, their statement is not the fact. Please check our reproducible results.  
 * [Paper Summary on Distance Metric, Representation Learning-Updated Blog](https://xinshaoamoswang.github.io/blogs/2020-04-23-deep-metric-learning/)
 
