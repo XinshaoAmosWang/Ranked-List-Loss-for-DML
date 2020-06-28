@@ -15,7 +15,7 @@
     
 * There are some vital breakthroughs over the time although it seems trivial now. 
     * [Multibatch Method](https://www.cse.huji.ac.il/~shashua/papers/multibatch-nips16.pdf), after which people rarely use rigid input formats. 
-        * Before this milestone, we heard a lot about Siamese networks, triplet networks, etc. 
+        * Before this milestone, we heard a lot about siamese networks, triplet networks, etc. 
         * After Multibatch Method, we construct doublets, triplets, or high-order relationships directly in the feature space.
     * The importance of sample mining/weighting becomes clearer for our community. Of course, there exist many variants of sample mining/weighting for different scenarios.
 
