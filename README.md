@@ -26,7 +26,7 @@
 
 
 ## Citation
-If you find our code and paper useful in your research, please kindly cite our paper:
+If you find our code and paper help your research, please kindly cite our paper:
 
 ```bash
 InProceedings{Wang_2019_CVPR,
