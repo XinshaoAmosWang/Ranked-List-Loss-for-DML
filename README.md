@@ -139,7 +139,7 @@ e.g. SOP_TrainImagePathBoxCell.mat contains <img src="imgs/img2.png" width="400"
 
 #### 2. How is a loss function related with deep metric learning?
     
-Please see our discussion in the paper.
+Please see our discussion in the [paper](https://arxiv.org/abs/1903.03238).
 
 
 
