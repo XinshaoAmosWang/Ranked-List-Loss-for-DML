@@ -132,7 +132,9 @@ e.g. SOP_TrainImagePathBoxCell.mat contains <img src="imgs/img2.png" width="400"
 ## Common questions
 
 #### 1. What does ranking mean? 
-The overall objective is to make the postive set rank before the negative set by a distance margin. We do not need to consider the exact order of examples within the positive set and negative set. 
+* Given a query, the objective is to rank its postive set in front of its negative set by a distance margin. 
+
+* We do not need to consider the exact order of examples within the positive set and negative set. 
 
 #### 2. What are the key components which influence the performance a lot?
 * Sample mining;
@@ -142,7 +144,7 @@ The overall objective is to make the postive set rank before the negative set by
 
 #### 3. How is a loss function related with deep metric learning?
     
-<img src="imgs/img1.png" width="400">
+Please see our discussion in the paper.
 
 
 
