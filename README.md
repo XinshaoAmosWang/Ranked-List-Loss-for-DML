@@ -87,7 +87,7 @@ The core functions are implemented in the [caffe](https://github.com/BVLC/caffe)
 
 ## Usage
 
-#### Examples for reproducing our results on [Stanford Online Product dataset](http://cvgl.stanford.edu/projects/lifted_struct/) are given. 
+#### Training on Stanford Online Product dataset. 
 
 * Data preparation for SOP
     
@@ -105,17 +105,17 @@ The core functions are implemented in the [caffe](https://github.com/BVLC/caffe)
     Run the training and testing scripts in the training folder of a specific setting defined by its corresponding prototxt folder. 
 
 
-#### Reproducing our results on In-shop Clothes
+#### Training on In-shop Clothes
 * Procedures are similar to SOP
 * Please see training scripts in Folder [InshopClothes_Simp_21042020](./InshopClothes_Simp_21042020)
 
-#### Our trained model on SOP, In-shop Clothes
+#### Our trained models on SOP, In-shop Clothes
 
 * [./SOP_Simp_25042020/pretrain_model/b150_v50_iter24k_0.748.caffemodel](./SOP_Simp_25042020/pretrain_model/b150_v50_iter24k_0.748.caffemodel)
 * [./InshopClothes_Simp_21042020/train_60_T10_pn04_v63/checkpoints1/checkpoint_iter_26000.caffemodel](./InshopClothes_Simp_21042020/train_60_T10_pn04_v63/checkpoints1/checkpoint_iter_26000.caffemodel)
 
 
-#### Custom data preparation
+#### Training on custom datasets
 
 You only need to create training/testing mat files with the same structure as  SOP_TrainImagePathBoxCell.mat and SOP_TestImagePathBoxCell.mat in directory SOP_GoogLeNet_Ori_V05/pre_pro_process. 
 
