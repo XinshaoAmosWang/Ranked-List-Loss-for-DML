@@ -11,17 +11,17 @@
 * [Paper Summary on Distance Metric, Representation Learning-Updated Blog](https://xinshaoamoswang.github.io/blogs/2020-04-23-deep-metric-learning/)
 
 #### **In deep metric learning, The improvements over time have been marginal?** Recently, in paper [A Metric Learning Reality Check](https://arxiv.org/pdf/2003.08505.pdf), it is reported that the improvements over time have been marginal at best. Is it true? I present my personal viewpoints as follows:
-    * First of all, acedemic research progress is naturally slow, continuous and tortuous. Beyond, it is full of flaws on its progress. For example, in person re-identification, several years ago, some researchers horizontally split one image into several parts for alignment, which is against the design of CNNs and non-meaningful. Because deep CNNs are designed to be invariant against translation, so that hand-crafted alignment is not necessary. 
+* First of all, acedemic research progress is naturally slow, continuous and tortuous. Beyond, it is full of flaws on its progress. For example, in person re-identification, several years ago, some researchers horizontally split one image into several parts for alignment, which is against the design of CNNs and non-meaningful. Because deep CNNs are designed to be invariant against translation, so that hand-crafted alignment is not necessary. 
     
-    * There are some vital breakthroughs over the time although it seems trivial now. 
-        * [Multibatch Method](https://www.cse.huji.ac.il/~shashua/papers/multibatch-nips16.pdf), after which people rarely use rigid input formats. 
-            * Before this milestone, we heard a lot about Siamese networks, triplet networks, etc. 
-            * After Multibatch Method, we construct doublets, triplets, or high-order relationships directly in the feature space.
-        * The importance of sample mining/weighting becomes clearer for our community. Of course, there exist many variants of sample mining/weighting for different scenarios.
+* There are some vital breakthroughs over the time although it seems trivial now. 
+    * [Multibatch Method](https://www.cse.huji.ac.il/~shashua/papers/multibatch-nips16.pdf), after which people rarely use rigid input formats. 
+        * Before this milestone, we heard a lot about Siamese networks, triplet networks, etc. 
+        * After Multibatch Method, we construct doublets, triplets, or high-order relationships directly in the feature space.
+    * The importance of sample mining/weighting becomes clearer for our community. Of course, there exist many variants of sample mining/weighting for different scenarios.
 
-        * Our community become more open-minded, all methods which learn discriminative representations can be categorised into deep metric learning, e.g., softmax + categorical cross entropy.
+    * Our community become more open-minded, all methods which learn discriminative representations can be categorised into deep metric learning, e.g., softmax + categorical cross entropy.
 
-        * ...
+    * ...
 
 
 
