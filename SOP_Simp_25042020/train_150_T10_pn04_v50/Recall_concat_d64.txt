@@ -1,0 +1,9 @@
+iter: 14000, rank1: 0.778, rank10: 0.899, rank100: 0.957
+iter: 16000, rank1: 0.781, rank10: 0.902, rank100: 0.957
+iter: 18000, rank1: 0.781, rank10: 0.901, rank100: 0.958
+iter: 20000, rank1: 0.782, rank10: 0.901, rank100: 0.958
+iter: 22000, rank1: 0.781, rank10: 0.901, rank100: 0.958
+iter: 24000, rank1: 0.786, rank10: 0.904, rank100: 0.959
+iter: 26000, rank1: 0.787, rank10: 0.905, rank100: 0.959
+iter: 28000, rank1: 0.786, rank10: 0.904, rank100: 0.959
+iter: 30000, rank1: 0.786, rank10: 0.905, rank100: 0.959

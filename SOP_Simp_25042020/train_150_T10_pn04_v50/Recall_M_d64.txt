@@ -1,0 +1,11 @@
+iter: 24000, rank1: 0.757, rank2: 0.806, rank4: 0.848, rank8: 0.878
+iter: 24000, rank1: 0.757, rank10: 0.887, rank100: 0.951
+iter: 14000, rank1: 0.750, rank10: 0.882, rank100: 0.948
+iter: 16000, rank1: 0.753, rank10: 0.884, rank100: 0.950
+iter: 18000, rank1: 0.752, rank10: 0.883, rank100: 0.950
+iter: 20000, rank1: 0.755, rank10: 0.885, rank100: 0.950
+iter: 22000, rank1: 0.750, rank10: 0.885, rank100: 0.950
+iter: 24000, rank1: 0.758, rank10: 0.888, rank100: 0.951
+iter: 26000, rank1: 0.758, rank10: 0.889, rank100: 0.952
+iter: 28000, rank1: 0.758, rank10: 0.888, rank100: 0.952
+iter: 30000, rank1: 0.758, rank10: 0.889, rank100: 0.952

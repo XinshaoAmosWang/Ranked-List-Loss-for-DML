@@ -1,0 +1,15 @@
+iter: 2000, rank1: 0.501, rank10: 0.757, rank20: 0.815, rank30: 0.845, rank40: 0.863, rank50: 0.876
+iter: 4000, rank1: 0.622, rank10: 0.850, rank20: 0.889, rank30: 0.909, rank40: 0.921, rank50: 0.929
+iter: 6000, rank1: 0.753, rank10: 0.920, rank20: 0.944, rank30: 0.954, rank40: 0.961, rank50: 0.965
+iter: 8000, rank1: 0.719, rank10: 0.902, rank20: 0.929, rank30: 0.942, rank40: 0.950, rank50: 0.955
+iter: 10000, rank1: 0.648, rank10: 0.868, rank20: 0.902, rank30: 0.920, rank40: 0.931, rank50: 0.939
+iter: 12000, rank1: 0.721, rank10: 0.896, rank20: 0.925, rank30: 0.939, rank40: 0.947, rank50: 0.953
+iter: 14000, rank1: 0.829, rank10: 0.953, rank20: 0.968, rank30: 0.975, rank40: 0.978, rank50: 0.981
+iter: 16000, rank1: 0.810, rank10: 0.948, rank20: 0.964, rank30: 0.971, rank40: 0.975, rank50: 0.978
+iter: 18000, rank1: 0.853, rank10: 0.957, rank20: 0.970, rank30: 0.976, rank40: 0.980, rank50: 0.982
+iter: 20000, rank1: 0.843, rank10: 0.956, rank20: 0.968, rank30: 0.975, rank40: 0.979, rank50: 0.982
+iter: 22000, rank1: 0.859, rank10: 0.963, rank20: 0.974, rank30: 0.980, rank40: 0.983, rank50: 0.985
+iter: 24000, rank1: 0.859, rank10: 0.963, rank20: 0.974, rank30: 0.980, rank40: 0.982, rank50: 0.984
+iter: 26000, rank1: 0.887, rank10: 0.972, rank20: 0.981, rank30: 0.984, rank40: 0.987, rank50: 0.989
+iter: 28000, rank1: 0.885, rank10: 0.972, rank20: 0.981, rank30: 0.985, rank40: 0.987, rank50: 0.989
+iter: 30000, rank1: 0.878, rank10: 0.969, rank20: 0.979, rank30: 0.983, rank40: 0.986, rank50: 0.987

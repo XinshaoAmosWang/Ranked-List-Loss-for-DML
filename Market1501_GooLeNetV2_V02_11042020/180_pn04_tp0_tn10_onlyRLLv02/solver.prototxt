@@ -1,0 +1,20 @@
+net: "../180_pn04_tp0_tn10_onlyRLLv02/train.prototxt"
+#
+lr_policy: "multistep"
+gamma: 0.5
+stepvalue: 1000
+stepvalue: 2000
+stepvalue: 3000
+stepvalue: 4000
+stepvalue: 5000
+#
+type: "SGD"
+base_lr: 0.1
+weight_decay: 0.00001
+momentum: 0.9
+#
+max_iter: 6000
+# default: target
+pn_margin: 0.4
+p_temperature: 0
+n_temperature: 10
