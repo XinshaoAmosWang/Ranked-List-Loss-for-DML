@@ -13,7 +13,7 @@ This work is being extended for TPAMI submission, with the main target to improv
 ### **In deep metric learning, The improvements over time have been marginal?** 
 Recently, in paper [A Metric Learning Reality Check](https://arxiv.org/pdf/2003.08505.pdf), it is reported that the improvements over time have been marginal at best. Is it true? I present my personal viewpoints as follows:
 * First of all, acedemic research progress is naturally slow, continuous and tortuous. Beyond, it is full of flaws on its progress. For example, 
-    * In person re-identification, several years ago, some researchers vertically split one image into several parts for alignment, which is against the design of CNNs and non-meaningful. Because deep CNNs are designed to be invariant against translation, so that hand-crafted alignment is not necessary. 
+    * In person re-identification, several years ago, some researchers vertically split one image into several parts for alignment, which is against the design of CNNs and non-meaningful. Because deep CNNs are designed to be invariant against translation, so that hand-crafted alignment is unnecessary. 
     * The Adam optimiser is found to be sensitive to the setting of delta recently.
     * ...
     
