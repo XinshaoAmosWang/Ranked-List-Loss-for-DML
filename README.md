@@ -48,7 +48,7 @@ tree
 ## Dependencies and Setup
 The core functions are implemented using C++ in the [caffe](https://github.com/BVLC/caffe) framework. We use matlab interfaces matcaffe for data preparation.  
 
-* Clone our repository and the submodule: Simply copy and execute following commands in the command line
+* Clone our repository: Simply copy and execute following commands in the command line
 
     ```bash
     git clone git@github.com:XinshaoAmosWang/Ranked-List-Loss-for-D
