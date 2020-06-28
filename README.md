@@ -136,13 +136,8 @@ e.g. SOP_TrainImagePathBoxCell.mat contains <img src="imgs/img2.png" width="400"
 
 * We do not need to consider the exact order of examples within the positive and negative sets. 
 
-#### 2. What are the key components which influence the performance a lot?
-* Sample mining;
-* Sample weighting;
-* Two distance hyper-parameters for optimisation and regularisation jointly;
-* Exploiting a weighted combination of more data points.  
 
-#### 3. How is a loss function related with deep metric learning?
+#### 2. How is a loss function related with deep metric learning?
     
 Please see our discussion in the paper.
 
