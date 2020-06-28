@@ -134,7 +134,7 @@ e.g. SOP_TrainImagePathBoxCell.mat contains <img src="imgs/img2.png" width="400"
 #### 1. What does ranking mean? 
 * Given a query, the objective is to rank its postive set in front of its negative set by a distance margin. 
 
-* We do not need to consider the exact order of examples within the positive set and negative set. 
+* We do not need to consider the exact order of examples within the positive and negative sets. 
 
 #### 2. What are the key components which influence the performance a lot?
 * Sample mining;
