@@ -45,12 +45,8 @@ cd ./Ranked-List-Loss-for-Deep-Metric-Learning
 tree
 ```
 
-## Dependencies
+## Dependencies and Setup
 The core functions are implemented using C++ in the [caffe](https://github.com/BVLC/caffe) framework. We use matlab interfaces matcaffe for data preparation.  
-* [MATLAB 2017b](https://uk.mathworks.com/products/new_products/release2017b.html)
-
-
-## Setup 
 
 * Clone our repository and the submodule: Simply copy and execute following commands in the command line
 
