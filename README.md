@@ -17,7 +17,7 @@ Recently, in paper [A Metric Learning Reality Check](https://arxiv.org/pdf/2003.
     * The Adam optimiser is found to be very sensitive to the setting of delta recently.
     * ...
     
-* There are some vital breakthroughs over the time although it seems trivial now. 
+* There are some vital breakthroughs over the time although they seem to be trivial now. 
     * [Multibatch Method](https://www.cse.huji.ac.il/~shashua/papers/multibatch-nips16.pdf), after which people rarely use rigid input formats. 
         * Before this milestone, we heard a lot about siamese networks, triplet networks, etc. 
         * After Multibatch Method, we construct doublets, triplets, or high-order tuples directly in the feature space.
