@@ -117,9 +117,9 @@ The core functions are implemented in the [caffe](https://github.com/BVLC/caffe)
 
 #### Custom data preparation
 
-    You only need to create training/testing mat files with the same structure as  SOP_TrainImagePathBoxCell.mat and SOP_TestImagePathBoxCell.mat in directory SOP_GoogLeNet_Ori_V05/pre_pro_process. 
+You only need to create training/testing mat files with the same structure as  SOP_TrainImagePathBoxCell.mat and SOP_TestImagePathBoxCell.mat in directory SOP_GoogLeNet_Ori_V05/pre_pro_process. 
 
-    e.g. SOP_TrainImagePathBoxCell.mat contains <img src="imgs/img2.png" width="400">, TrainImagePathBoxCell storing all image paths and class_ids storing their corresponding semantic labels. 
+e.g. SOP_TrainImagePathBoxCell.mat contains <img src="imgs/img2.png" width="400">, TrainImagePathBoxCell storing all image paths and class_ids storing their corresponding semantic labels. 
 
 
 
