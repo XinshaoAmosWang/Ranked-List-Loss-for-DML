@@ -25,7 +25,7 @@ Recently, in paper [A Metric Learning Reality Check](https://arxiv.org/pdf/2003.
 
     * [Confidence penalty or rewarding, which one to go ahead?](https://xinshaoamoswang.github.io/blogs/2020-06-07-Progressive-self-label-correction/#storyline)
 
-    * [Should we trust a learner (i.e. a deep model) or human annotations (i.e. textbooks for learning supervision)?](https://arxiv.org/pdf/2005.03788.pdf)
+    * [TO trust a learner (i.e. a deep model) or human annotations (i.e. textbooks for learning supervision), which one to choose?](https://arxiv.org/pdf/2005.03788.pdf)
     
     * ...
     
