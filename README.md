@@ -23,7 +23,7 @@ Recently, in paper [A Metric Learning Reality Check](https://arxiv.org/pdf/2003.
 
     * Is [DisturbLabel](https://openaccess.thecvf.com/content_cvpr_2016/papers/Xie_DisturbLabel_Regularizing_CNN_CVPR_2016_paper.pdf) a meaningful regulariser? If so, it makes me think that we should **deliberately generate label noise** at the training dataset! Is not it ridiculous? You will cultivate your own opinion after reading [ProSelfLC: Progressive Self Label Correction for Training Robust Deep Neural Networks](https://arxiv.org/pdf/2005.03788.pdf).
 
-    * [Confidence penalty or rewarding, which one to choose?](https://xinshaoamoswang.github.io/blogs/2020-06-07-Progressive-self-label-correction/#storyline)
+    * [Confidence penalty or rewarding, which one to go ahead?](https://xinshaoamoswang.github.io/blogs/2020-06-07-Progressive-self-label-correction/#storyline)
 
     * [Should we trust a learner (i.e. a deep model) or human annotations (i.e. textbooks for learning supervision)?](https://arxiv.org/pdf/2005.03788.pdf)
     
