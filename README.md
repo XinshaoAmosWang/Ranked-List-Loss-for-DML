@@ -17,6 +17,10 @@ Recently, in paper [A Metric Learning Reality Check](https://arxiv.org/pdf/2003.
 
     * The Adam optimiser is found to be very sensitive to the setting of delta recently.
 
+    * [Does Mean Absolute Error Treat Examples Equally?](https://arxiv.org/pdf/1903.12141.pdf)
+
+    * [How to understand a loss function in a right way?](https://arxiv.org/pdf/1905.11233.pdf)
+
     * Is [DisturbLabel](https://openaccess.thecvf.com/content_cvpr_2016/papers/Xie_DisturbLabel_Regularizing_CNN_CVPR_2016_paper.pdf) a meaningful regulariser? If so, it makes me think that we should **deliberately generate label noise** at the training dataset! Is not it ridiculous? You will have your own opinion after reading [ProSelfLC: Progressive Self Label Correction for Training Robust Deep Neural Networks](https://arxiv.org/pdf/2005.03788.pdf).
 
     * [Confidence penalty or rewarding, which one to choose?](https://xinshaoamoswang.github.io/blogs/2020-06-07-Progressive-self-label-correction/#storyline)
