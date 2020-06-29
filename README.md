@@ -15,6 +15,11 @@ Recently, in paper [A Metric Learning Reality Check](https://arxiv.org/pdf/2003.
 * First of all, acedemic research progress is naturally slow, continuous and tortuous. Beyond, it is full of flaws on its progress. For example, 
     * In person re-identification, several years ago, some researchers vertically split one image into several parts for alignment, which is against the design of CNNs and non-meaningful. Because deep CNNs are designed to be invariant against translation, so that hand-crafted alignment is unnecessary. 
     * The Adam optimiser is found to be very sensitive to the setting of delta recently.
+    * Is [DisturbLabel](https://openaccess.thecvf.com/content_cvpr_2016/papers/Xie_DisturbLabel_Regularizing_CNN_CVPR_2016_paper.pdf) is meaningful regulariser? If so, it makes think we should generate some label noise for our training data deliberately! 
+    You may get your own opinion after reading [ProSelfLC: Progressive Self Label Correction for
+Training Robust Deep Neural Networks](https://arxiv.org/pdf/2005.03788.pdf)
+    * [Confidence penalty or rewarding, which one is better?](https://xinshaoamoswang.github.io/blogs/2020-06-07-Progressive-self-label-correction/#storyline)
+    * [To trust a learner (a deep model) or human annotations (textbooks for learning supervision)](https://arxiv.org/pdf/2005.03788.pdf)
     * ...
     
 * There are some vital breakthroughs over the time although they seem to be trivial now. 
