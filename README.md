@@ -33,9 +33,13 @@ Recently, in paper [A Metric Learning Reality Check](https://arxiv.org/pdf/2003.
     * [Multibatch Method](https://www.cse.huji.ac.il/~shashua/papers/multibatch-nips16.pdf), after which people rarely use rigid input formats. 
         * Before this milestone, we heard a lot about siamese networks, triplet networks, etc. 
         * After Multibatch Method, we construct doublets, triplets, or high-order tuples directly in the embedding space.
+
     * The importance of sample mining/weighting becomes clearer for our community. Of course, there exist many variants of sample mining/weighting for different scenarios.
 
     * Our community become much more open-minded: all methods which learn discriminative representations can be categorised into deep metric learning, e.g., softmax + categorical cross entropy.
+
+    * Deep metric learning tends to follow a similar training setting with few-shot training, i.e., in one training batch, C classes and K examples per class are randomly sampled. 
+    Naturally, we can make C and K random to increase the training stochasticity.  
 
     * ...
 
