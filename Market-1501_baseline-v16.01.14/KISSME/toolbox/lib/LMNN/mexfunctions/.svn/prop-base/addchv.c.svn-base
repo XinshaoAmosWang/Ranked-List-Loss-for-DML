@@ -1,9 +1,0 @@
-K 11
-svn::ignore
-V 5
-*.mat
-K 14
-svn:executable
-V 1
-*
-END
