@@ -4,7 +4,7 @@
 #### [[Paper]](https://arxiv.org/abs/1903.03238) [[Slides]](https://github.com/XinshaoAmosWang/Ranked-List-Loss-for-DML/blob/master/RLL_CVPR19_V01.pdf) [[Poster]](https://github.com/XinshaoAmosWang/Ranked-List-Loss-for-DML/blob/master/RLL_Poster_V03.pdf)
 
 
-### Code is under legal check... 
+#### Code is under legal check. Please feel free to drop me an email if you want it for academic use only.   
 
 
 This work is being extended for TPAMI submission, with the main target to improve this work further. 
